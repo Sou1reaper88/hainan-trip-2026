@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="theme-color" content="#0f766e"/>
+<title>9.19–9.24 海南自驾旅行</title>
+<style>
+:root{
+  --bg:#f4f8f7;--card:#fff;--text:#15302e;--muted:#66807d;--line:#dfeae7;
+  --primary:#0f766e;--primary2:#14b8a6;--soft:#e8f6f3;--sand:#f6ead6;
+  --warn:#fff7df;--shadow:0 10px 30px rgba(19,78,74,.09);--danger:#dc2626;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;padding-bottom:92px}
+button,input,textarea{font:inherit}.app{max-width:720px;margin:auto}.hero{position:relative;overflow:hidden;padding:calc(24px + env(safe-area-inset-top)) 20px 24px;background:linear-gradient(145deg,#0f766e,#14b8a6 70%,#7dd3c7);color:#fff;border-radius:0 0 28px 28px}.hero:after{content:"";position:absolute;right:-35px;top:-20px;width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,.1)}.eyebrow{font-size:13px;opacity:.88;letter-spacing:.5px}.hero h1{margin:8px 0 5px;font-size:30px;line-height:1.15}.hero p{margin:0;opacity:.92}.hero-row{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}.pill{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.22);padding:8px 11px;border-radius:999px;font-size:13px;backdrop-filter:blur(6px)}
+.main{padding:16px}.section{margin:12px 0 18px}.section-title{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:0 2px 10px}.section-title h2{font-size:19px;margin:0}.section-title span{font-size:12px;color:var(--muted)}.card{background:var(--card);border:1px solid rgba(15,118,110,.08);border-radius:19px;box-shadow:var(--shadow);padding:16px;margin-bottom:12px}.notice{background:var(--warn);box-shadow:none;border-color:#f4df9f}.notice b{display:block;margin-bottom:4px}.small{font-size:12px;color:var(--muted);line-height:1.6}
+.flight{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center}.airport strong{font-size:27px;display:block}.airport span{font-size:12px;color:var(--muted)}.airport.right{text-align:right}.plane{text-align:center;color:var(--primary)}.plane .line{width:64px;height:1px;background:var(--line);position:relative;margin:8px auto}.plane .line:after{content:"✈";position:absolute;left:25px;top:-12px;background:#fff;padding:0 5px}.flight-meta{display:flex;justify-content:space-between;gap:10px;border-top:1px dashed var(--line);margin-top:14px;padding-top:12px;font-size:13px}.flight-meta b{color:var(--primary)}
+.route{display:flex;align-items:center;gap:7px;overflow-x:auto;padding-bottom:3px}.route .stop{white-space:nowrap;background:var(--soft);color:var(--primary);padding:8px 11px;border-radius:999px;font-weight:600;font-size:13px}.route .arrow{color:#9ab3af}
+.day{padding:0;overflow:hidden}.day-head{display:flex;align-items:center;gap:12px;padding:16px;cursor:pointer}.datebox{width:58px;height:58px;border-radius:16px;background:var(--soft);display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--primary);flex:none}.datebox strong{font-size:20px}.datebox span{font-size:11px}.day-title{flex:1}.day-title h3{margin:0 0 4px;font-size:16px}.day-title p{margin:0;font-size:12px;color:var(--muted)}.chev{font-size:20px;color:#8ba5a1;transition:.2s}.day.open .chev{transform:rotate(180deg)}.day-body{display:none;padding:0 16px 16px}.day.open .day-body{display:block}.timeline{border-left:2px solid var(--line);margin-left:7px;padding-left:18px}.item{position:relative;margin:0 0 16px}.item:last-child{margin-bottom:4px}.item:before{content:"";position:absolute;left:-24px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--primary2);box-shadow:0 0 0 4px #e6f7f4}.time{font-size:11px;color:var(--primary);font-weight:700}.item h4{margin:3px 0 3px;font-size:15px}.item p{margin:0;color:var(--muted);font-size:12px;line-height:1.6}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.tag{font-size:11px;padding:5px 8px;border-radius:999px;background:#f1f5f4;color:#50706b}.actions{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}.btn{border:0;border-radius:12px;padding:10px 12px;background:var(--soft);color:var(--primary);font-weight:600;font-size:12px;text-decoration:none;display:inline-block;cursor:pointer}.btn.primary{background:var(--primary);color:#fff}.btn.ghost{background:#fff;border:1px solid var(--line)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{padding:14px;background:#fafcfb;border-radius:15px;border:1px solid var(--line)}.stat span{display:block;color:var(--muted);font-size:11px}.stat strong{display:block;margin-top:5px;font-size:15px}.form-row{margin-bottom:10px}.form-row label{display:block;font-size:12px;color:var(--muted);margin-bottom:5px}.field{width:100%;border:1px solid var(--line);border-radius:12px;padding:11px 12px;background:#fbfdfc;color:var(--text);outline:none}.field:focus{border-color:var(--primary2)}
+.check{display:flex;align-items:center;gap:11px;padding:12px 2px;border-bottom:1px solid #edf2f1}.check:last-child{border:0}.check input{width:20px;height:20px;accent-color:var(--primary)}.check label{font-size:14px}.map-row{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}.map-row:last-child{border:0}.num{width:30px;height:30px;border-radius:10px;background:var(--soft);color:var(--primary);display:flex;align-items:center;justify-content:center;font-weight:700;flex:none}.map-info{flex:1}.map-info b{display:block;font-size:14px}.map-info span{font-size:11px;color:var(--muted)}
+.tabpage{display:none}.tabpage.active{display:block}.nav{position:fixed;z-index:50;left:50%;bottom:0;transform:translateX(-50%);width:min(720px,100%);display:grid;grid-template-columns:repeat(4,1fr);background:rgba(255,255,255,.94);border-top:1px solid var(--line);padding:8px 8px calc(8px + env(safe-area-inset-bottom));backdrop-filter:blur(16px)}.nav button{border:0;background:none;color:#78918d;font-size:11px;padding:4px}.nav button .ico{display:block;font-size:21px;margin-bottom:2px}.nav button.active{color:var(--primary);font-weight:700}.footer{font-size:11px;color:#8aa09d;text-align:center;padding:8px 10px 18px;line-height:1.6}
+.toast{position:fixed;left:50%;bottom:98px;transform:translateX(-50%) translateY(20px);background:#183c39;color:#fff;padding:10px 14px;border-radius:999px;font-size:12px;opacity:0;pointer-events:none;transition:.2s;z-index:99}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.weather-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.wx-card{padding:14px;border:1px solid var(--line);border-radius:16px;background:#fbfefd}.wx-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}.wx-day{font-size:13px;font-weight:700}.wx-city{font-size:11px;color:var(--muted);margin-top:2px}.wx-main{display:flex;align-items:center;gap:10px;margin-top:10px}.wx-icon{font-size:26px;line-height:1}.wx-temp{font-size:22px;font-weight:800;color:var(--primary)}.wx-desc{font-size:12px;color:var(--muted)}.wx-meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.wx-badge{font-size:11px;padding:5px 8px;border-radius:999px;background:var(--soft);color:var(--primary)}.wx-suggest{margin-top:10px;padding:10px 11px;border-radius:12px;background:#f6fbfa;font-size:12px;line-height:1.55;border:1px dashed #cde7e2}.wx-inline{margin:0 0 14px;padding:12px;border-radius:14px;background:#f8fcfb;border:1px solid var(--line)}.wx-inline b{display:block;font-size:13px;margin-bottom:4px}.wx-status{font-size:12px;color:var(--muted)}.wx-tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.mono{font-variant-numeric:tabular-nums}.danger{color:var(--danger)}
+@media(max-width:480px){.hero h1{font-size:27px}.main{padding:13px}.flight{gap:6px}.airport strong{font-size:24px}.grid2,.weather-grid,.grid3{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="hero">
+  <div class="eyebrow">HAINAN ROAD TRIP · 2026</div>
+  <h1>三亚 · 陵水 · 万宁</h1>
+  <p>9月19日 — 9月24日｜6天5晚自驾</p>
+  <div class="hero-row">
+    <div class="pill" id="countdown">距离出发还有 ·· 天</div>
+    <div class="pill">🚗 海岸线自驾</div>
+    <div class="pill">🌴 轻松慢游</div>
+    <div class="pill">🌦️ 每日天气</div>
+  </div>
+</header>
+<div class="main">
+
+<section class="tabpage active" id="overview">
+  <div class="section">
+    <div class="section-title"><h2>行程总览</h2><span>9.19 — 9.24</span></div>
+    <div class="card">
+      <div class="route">
+        <span class="stop">杭州</span><span class="arrow">→</span><span class="stop">三亚</span><span class="arrow">→</span><span class="stop">陵水</span><span class="arrow">→</span><span class="stop">万宁</span><span class="arrow">→</span><span class="stop">三亚</span><span class="arrow">→</span><span class="stop">杭州</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="grid3">
+        <div class="stat"><span>已确定住宿</span><strong>三亚 2晚 · 陵水 2晚 · 万宁 1晚</strong></div>
+        <div class="stat"><span>核心风格</span><strong>酒店躺平 + 海边慢游 + 顺路逛店</strong></div>
+        <div class="stat"><span>购物偏好</span><strong>Vintage / 设计师 / 银饰 / 冲浪潮牌</strong></div>
+      </div>
+    </div>
+    <div class="card">
+      <b>🛍️ 顺路逛店策略</b>
+      <div class="small" style="margin-top:6px">只把逛店当成顺路加分项，不单独占半天。优先考虑：<b>设计师品牌 / Vintage / 首饰 / 家居杂货 / 冲浪潮牌</b>。9/22 可把日月湾、石梅湾、神州半岛串起来；9/23 从万宁回三亚后，再视体力和营业情况决定是否顺路看海棠湾买手店。</div>
+    </div>
+    <div class="card notice">
+      <b>✈️ 航班信息</b>
+      <div class="small">当前页面按 <b>9/19 HU7386 去程、9/24 HU7383 返程</b> 组织。若航班时刻后续有调整，以出票信息和航司通知为准。</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">
+      <h2>每日天气</h2>
+      <div class="wx-tools">
+        <span class="small mono" id="weatherUpdate">尚未获取天气</span>
+        <button class="btn ghost" id="refreshWeather">刷新天气</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="small" style="margin-bottom:12px">天气用于辅助安排当天行程，尤其是 <b>9/21 分界洲岛 / 黎安</b> 的切换，以及 <b>9/22 DEDECO 看日落</b> 的时机判断。页面支持联网刷新；若接口失败，会优先显示上次缓存数据。</div>
+      <div class="weather-grid" id="weatherGrid"></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><h2>去程航班</h2><span>9月19日 · 周六</span></div>
+    <div class="card">
+      <div class="flight">
+        <div class="airport"><strong>HGH</strong><span>杭州萧山 T3</span></div>
+        <div class="plane"><b>HU7386</b><div class="line"></div><span class="small">约 2h50m</span></div>
+        <div class="airport right"><strong>SYX</strong><span>三亚凤凰 T3</span></div>
+      </div>
+      <div class="flight-meta"><span><b>16:05</b> 计划起飞</span><span><b>18:55</b> 计划到达</span></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><h2>返程航班</h2><span>9月24日 · 周四</span></div>
+    <div class="card">
+      <div class="flight">
+        <div class="airport"><strong>SYX</strong><span>三亚凤凰 T3</span></div>
+        <div class="plane"><b>HU7383</b><div class="line"></div><span class="small">约 3h05m</span></div>
+        <div class="airport right"><strong>HGH</strong><span>杭州萧山 T3</span></div>
+      </div>
+      <div class="flight-meta"><span><b>16:40</b> 计划起飞</span><span><b>19:45</b> 计划到达</span></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><h2>住宿 & 租车</h2><span>可继续手动修改</span></div>
+    <div class="card">
+      <div class="form-row"><label>9/19 三亚住宿</label><input class="field save" data-key="hotel19" value="三亚湾希尔顿逸林酒店"/></div>
+      <div class="form-row"><label>9/20 陵水住宿</label><input class="field save" data-key="hotel20" value="海南三正月酒店"/></div>
+      <div class="form-row"><label>9/21 陵水住宿</label><input class="field save" data-key="hotel21" value="海南三正月酒店"/></div>
+      <div class="form-row"><label>9/22 万宁住宿</label><input class="field save" data-key="hotel22" value="万宁神州半岛假日度假酒店"/></div>
+      <div class="form-row"><label>9/23 三亚住宿</label><input class="field save" data-key="hotel23" value="三亚海棠湾保利悦雅酒店"/></div>
+      <div class="form-row"><label>租车信息</label><input class="field save" data-key="car" placeholder="车型 / 平台 / 取还车说明" value="9/19 三亚机场取车，9/24 机场还车"/></div>
+    </div>
+  </div>
+</section>
+
+<section class="tabpage" id="itinerary">
+  <div class="section">
+    <div class="section-title"><h2>每日行程</h2><span>点击展开详情</span></div>
+
+    <div class="card day">
+      <div class="day-head" onclick="toggleDay(this)">
+        <div class="datebox"><strong>19</strong><span>SEP</span></div>
+        <div class="day-title"><h3>抵达三亚 · 机场取车</h3><p>入住三亚湾希尔顿逸林酒店</p></div>
+        <div class="chev">⌄</div>
+      </div>
+      <div class="day-body">
+        <div class="wx-inline" data-inline-weather="2026-09-19"><b>当日天气</b><div class="wx-status">等待天气数据…</div></div>
+        <div class="timeline">
+          <div class="item"><span class="time">16:05–18:55</span><h4>HU7386 杭州 → 三亚</h4><p>抵达三亚凤凰机场后取车，开始本次海南东线自驾。</p></div>
+          <div class="item"><span class="time">抵达后</span><h4>机场取车</h4><p>预留验车、取车和导航到酒店的时间。</p><div class="tags"><span class="tag">已确定</span><span class="tag">自驾开始</span></div></div>
+          <div class="item"><span class="time">晚上</span><h4>入住三亚湾希尔顿逸林酒店</h4><p>当晚以休息为主，晚间安排继续留空，方便后续按到达状态再补。</p><div class="tags"><span class="tag">已确定酒店</span><span class="tag">待安排晚间活动</span></div></div>
+        </div>
+        <div class="actions"><button class="btn primary" onclick="copyRoute('三亚凤凰机场 → 三亚湾希尔顿逸林酒店')">复制当天路线</button></div>
+      </div>
+    </div>
+
+    <div class="card day">
+      <div class="day-head" onclick="toggleDay(this)">
+        <div class="datebox"><strong>20</strong><span>SEP</span></div>
+        <div class="day-title"><h3>三亚 → 陵水</h3><p>入住海南三正月酒店 · 酒店休息为主</p></div>
+        <div class="chev">⌄</div>
+      </div>
+      <div class="day-body">
+        <div class="wx-inline" data-inline-weather="2026-09-20"><b>当日天气</b><div class="wx-status">等待天气数据…</div></div>
+        <div class="timeline">
+          <div class="item"><span class="time">上午</span><h4>三亚出发前往陵水</h4><p>今天不建议排太满，保持轻松自驾节奏。</p></div>
+          <div class="item"><span class="time">中午 / 下午</span><h4>入住海南三正月酒店</h4><p>9/20–9/21 连住两晚，靠海躺酒店更合适。若状态好，可在酒店周边轻松散步。</p><div class="tags"><span class="tag">已确定酒店</span><span class="tag">土福湾</span></div></div>
+          <div class="item"><span class="time">其余时段</span><h4>机动留白</h4><p>今天其余时段先保留为空，不强行塞景点。</p></div>
+        </div>
+        <div class="actions"><button class="btn primary" onclick="copyRoute('三亚湾希尔顿逸林酒店 → 海南三正月酒店')">复制当天路线</button></div>
+      </div>
+    </div>
+
+    <div class="card day open">
+      <div class="day-head" onclick="toggleDay(this)">
+        <div class="datebox"><strong>21</strong><span>SEP</span></div>
+        <div class="day-title"><h3>陵水 · 分界洲岛 / 黎安双方案</h3><p>果冻海优先，但根据天气和海况切换</p></div>
+        <div class="chev">⌄</div>
+      </div>
+      <div class="day-body">
+        <div class="wx-inline" data-inline-weather="2026-09-21"><b>当日天气</b><div class="wx-status">等待天气数据…</div></div>
+        <div class="timeline">
+          <div class="item"><span class="time">Plan A</span><h4>分界洲岛 · 看果冻海</h4><p>如果天气晴朗、云量较低、海况和风浪适合上岛，就优先去分界洲岛。这是当天第一优先级。</p><div class="tags"><span class="tag">天气好优先</span><span class="tag">果冻海</span></div><div class="actions"><a class="btn" href="https://uri.amap.com/search?keyword=%E5%88%86%E7%95%8C%E6%B4%B2%E5%B2%9B%E6%97%85%E6%B8%B8%E5%8C%BA%20%E9%99%B5%E6%B0%B4&callnative=1">分界洲岛导航</a></div></div>
+          <div class="item"><span class="time">Plan B</span><h4>黎安镇 + 黎安港</h4><p>如果天气一般、海况不佳，改成黎安镇和黎安港的轻松慢游；重点看渔港、潟湖和小镇氛围，不赶行程。</p><div class="tags"><span class="tag">阴天 / 阵雨可选</span><span class="tag">小镇慢游</span></div><div class="actions"><a class="btn" href="https://uri.amap.com/search?keyword=%E9%BB%8E%E5%AE%89%E9%95%87%20%E9%99%B5%E6%B0%B4&callnative=1">黎安镇导航</a><a class="btn" href="https://uri.amap.com/search?keyword=%E9%BB%8E%E5%AE%89%E6%B8%AF%20%E9%99%B5%E6%B0%B4&callnative=1">黎安港</a></div></div>
+          <div class="item"><span class="time">Plan C</span><h4>酒店休息</h4><p>如果持续下雨或风力较大，就不硬出门，直接把这天还给酒店。</p><div class="tags"><span class="tag">恶劣天气保底</span></div></div>
+          <div class="item"><span class="time">晚上</span><h4>继续住海南三正月酒店</h4><p>根据白天方案返回酒店休息。</p></div>
+        </div>
+        <div class="actions"><button class="btn primary" onclick="copyRoute('分界洲岛（Plan A） / 黎安镇+黎安港（Plan B） / 酒店休息（Plan C）')">复制当日备选方案</button></div>
+      </div>
+    </div>
+
+    <div class="card day">
+      <div class="day-head" onclick="toggleDay(this)">
+        <div class="datebox"><strong>22</strong><span>SEP</span></div>
+        <div class="day-title"><h3>陵水 → 万宁 · 石梅湾 & 神州半岛</h3><p>下午茶 + 日落晚饭 · 入住神州半岛假日度假酒店</p></div>
+        <div class="chev">⌄</div>
+      </div>
+      <div class="day-body">
+        <div class="wx-inline" data-inline-weather="2026-09-22"><b>当日天气</b><div class="wx-status">等待天气数据…</div></div>
+        <div class="timeline">
+          <div class="item"><span class="time">上午</span><h4>退房后出发前往万宁</h4><p>今天的路线比较完整，但依旧以轻松为主，不必每一站都逛满。</p></div>
+          <div class="item"><span class="time">途中可选</span><h4>日月湾 · 冲浪潮牌 / 海边生活方式店</h4><p>如果想顺路逛店，可在日月湾停 30–45 分钟，优先看 <b>GROM 冲浪集合店</b>，也可选 <b>RiMi</b> 或 <b>L·sea 好物集</b>。</p><div class="tags"><span class="tag">可选</span><span class="tag">冲浪潮牌</span><span class="tag">首饰 / 杂货</span></div></div>
+          <div class="item"><span class="time">下午</span><h4>石梅湾 · GoofyDog / CASHCOW 下午茶</h4><p>在石梅湾逛街、喝下午茶，两家二选一即可，不把它变成打卡任务。</p><div class="tags"><span class="tag">二选一</span><span class="tag">下午茶</span><span class="tag">石梅湾</span></div><div class="actions"><a class="btn" href="https://uri.amap.com/search?keyword=GoofyDog%E7%9F%B3%E6%A2%85%E6%B9%BE%E5%BA%97%20%E4%B8%87%E5%AE%81&callnative=1">GoofyDog</a><a class="btn" href="https://uri.amap.com/search?keyword=CASHCOW%E7%9F%B3%E6%A2%85%E6%B9%BE%20%E4%B8%87%E5%AE%81&callnative=1">CASHCOW</a></div></div>
+          <div class="item"><span class="time">去晚饭前</span><h4>神州半岛 · 轻逛 Goodday / Peninsula</h4><p>如果下午茶后还有兴趣，可顺路看神州半岛的 <b>Goodday</b> 集合商店与 <b>Peninsula</b> 手工饰品，更贴近你想逛的设计感小店。</p><div class="tags"><span class="tag">顺路</span><span class="tag">设计感服饰</span><span class="tag">手工首饰</span></div></div>
+          <div class="item"><span class="time">傍晚 / 晚饭</span><h4>DEDECO 晚饭 + 拍日落</h4><p>今天的重头戏之一。到店时间可根据天气、日落和下午茶结束时间灵活调整。</p><div class="tags"><span class="tag">已确定</span><span class="tag">神州半岛</span><span class="tag">日落</span></div><div class="actions"><a class="btn" href="https://uri.amap.com/search?keyword=DEDECO%E7%A5%9E%E5%B7%9E%E5%8D%8A%E5%B2%9B%20%E4%B8%87%E5%AE%81&callnative=1">DEDECO 导航</a></div></div>
+          <div class="item"><span class="time">晚上</span><h4>入住万宁神州半岛假日度假酒店</h4><p>今晚直接住在神州半岛，节奏会比之前更顺。</p><div class="tags"><span class="tag">已确定酒店</span></div></div>
+        </div>
+        <div class="actions"><button class="btn primary" onclick="copyRoute('海南三正月酒店 → 日月湾（可选） → 石梅湾 GoofyDog/CASHCOW → 神州半岛 Goodday/Peninsula（可选） → DEDECO → 万宁神州半岛假日度假酒店')">复制当天路线</button></div>
+      </div>
+    </div>
+
+    <div class="card day">
+      <div class="day-head" onclick="toggleDay(this)">
+        <div class="datebox"><strong>23</strong><span>SEP</span></div>
+        <div class="day-title"><h3>TREECO 可可种植园 → 三亚</h3><p>DIY 巧克力后回三亚 · 入住海棠湾保利悦雅酒店</p></div>
+        <div class="chev">⌄</div>
+      </div>
+      <div class="day-body">
+        <div class="wx-inline" data-inline-weather="2026-09-23"><b>当日天气</b><div class="wx-status">等待天气数据…</div></div>
+        <div class="timeline">
+          <div class="item"><span class="time">上午 / 白天</span><h4>TREECO 可可种植园 · 做巧克力</h4><p>计划在万宁兴隆做巧克力 DIY，体验约 2–2.5 小时。具体预约时间后续再补。</p><div class="tags"><span class="tag">已确定</span><span class="tag">手作体验</span><span class="tag">兴隆</span></div><div class="actions"><a class="btn" href="https://uri.amap.com/search?keyword=Treeco%E5%8F%AF%E5%8F%AF%E7%A7%8D%E6%A4%8D%E5%9B%AD%20%E4%B8%87%E5%AE%81&callnative=1">可可园导航</a></div></div>
+          <div class="item"><span class="time">返程途中 · 可选</span><h4>海棠湾买手店候选</h4><p>如果时间、营业状态和体力都合适，可顺路看海棠湾设计师买手店；否则直接回酒店，不为了逛店绕路。</p><div class="tags"><span class="tag">可选</span><span class="tag">设计师品牌</span><span class="tag">顺路为主</span></div></div>
+          <div class="item"><span class="time">傍晚 / 晚上</span><h4>入住三亚海棠湾保利悦雅酒店</h4><p>今晚住海棠湾，方便第二天白天继续安排免税购物后再去机场。</p><div class="tags"><span class="tag">已确定酒店</span><span class="tag">海棠湾</span></div></div>
+        </div>
+        <div class="actions"><button class="btn primary" onclick="copyRoute('万宁神州半岛假日度假酒店 → TREECO 可可种植园 → 三亚海棠湾保利悦雅酒店')">复制当天路线</button></div>
+      </div>
+    </div>
+
+    <div class="card day open">
+      <div class="day-head" onclick="toggleDay(this)">
+        <div class="datebox"><strong>24</strong><span>SEP</span></div>
+        <div class="day-title"><h3>免税购物 · 机场还车 · 返程</h3><p>白天机动安排 · HU7383 返程</p></div>
+        <div class="chev">⌄</div>
+      </div>
+      <div class="day-body">
+        <div class="wx-inline" data-inline-weather="2026-09-24"><b>当日天气</b><div class="wx-status">等待天气数据…</div></div>
+        <div class="timeline">
+          <div class="item"><span class="time">白天</span><h4>免税购物</h4><p>具体去哪一家免税店暂未锁定；考虑到前一晚住海棠湾，可优先考虑海棠湾免税城，但最终仍按返程节奏决定。</p><div class="tags"><span class="tag">已确定事项</span><span class="tag">具体门店待定</span></div></div>
+          <div class="item"><span class="time">下午</span><h4>前往机场 · 还车</h4><p>预留加油 / 充电、验车、还车以及前往航站楼的时间。</p><div class="tags"><span class="tag">已确定</span><span class="tag">还车</span></div></div>
+          <div class="item"><span class="time">16:40–19:45</span><h4>HU7383 三亚 → 杭州</h4><p>结束本次海南东线自驾。</p></div>
+        </div>
+        <div class="actions"><button class="btn primary" onclick="copyRoute('三亚海棠湾 → 免税店（待定） → 三亚凤凰国际机场')">复制返程路线</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tabpage" id="map">
+  <div class="section">
+    <div class="section-title"><h2>地点导航</h2><span>点击唤起地图</span></div>
+    <div class="card" id="maplist"></div>
+  </div>
+</section>
+
+<section class="tabpage" id="checklist">
+  <div class="section">
+    <div class="section-title"><h2>出行清单</h2><span>勾选会自动保存</span></div>
+    <div class="card" id="checks"></div>
+  </div>
+  <div class="section">
+    <div class="section-title"><h2>旅行备忘</h2><span>自动保存</span></div>
+    <div class="card"><textarea class="field save" data-key="memo" placeholder="餐厅、停车、门票、想买的东西……" rows="8"></textarea></div>
+  </div>
+</section>
+
+<div class="footer">这是可离线打开的单页旅行手册。天气功能需联网刷新；若接口异常会优先显示上次缓存。航班与景区营业时间存在调整可能，请以出发前最新通知为准。</div>
+</div>
+
+<nav class="nav">
+  <button class="active" data-tab="overview"><span class="ico">⌂</span>总览</button>
+  <button data-tab="itinerary"><span class="ico">☷</span>行程</button>
+  <button data-tab="map"><span class="ico">⌖</span>导航</button>
+  <button data-tab="checklist"><span class="ico">✓</span>清单</button>
+</nav>
+<div class="toast" id="toast">已复制</div>
+</div>
+
+<script>
+const tripDate = new Date('2026-09-19T00:00:00+08:00');
+const diff = Math.ceil((tripDate - new Date()) / 86400000);
+document.getElementById('countdown').textContent = diff > 0 ? `距离出发还有 ${diff} 天` : (diff === 0 ? '今天出发 🌴' : '旅行进行中 / 已结束');
+
+document.querySelectorAll('.nav button').forEach(btn=>btn.addEventListener('click',()=>{
+  document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));
+  document.querySelectorAll('.tabpage').forEach(x=>x.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(btn.dataset.tab).classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}));
+function toggleDay(el){el.parentElement.classList.toggle('open')}
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1600)}
+async function copyRoute(route){try{await navigator.clipboard.writeText(route);toast('路线已复制')}catch(e){toast(route)}}
+
+const places=[
+['三亚凤凰国际机场','三亚','取车 / 还车 / 航班'],
+['三亚湾希尔顿逸林酒店','三亚湾','9/19 住宿'],
+['海南三正月酒店','陵水土福湾','9/20–9/21 连住两晚'],
+['分界洲岛旅游区','陵水','9/21 Plan A'],
+['黎安镇','陵水','9/21 Plan B'],
+['黎安港','陵水','9/21 Plan B'],
+['GROM冲浪集合店','万宁日月湾','9/22 可选 · 冲浪 / 滑板 / 服装集合店'],
+['RiMi日月湾店','万宁日月湾','9/22 可选 · 海岛服饰 / 首饰'],
+['L·sea好物集','万宁日月湾','9/22 可选 · 手作首饰 / 杂货'],
+['GoofyDog海景餐酒吧（石梅湾店）','万宁石梅湾','9/22 下午茶候选'],
+['CASHCOW','万宁石梅湾','9/22 下午茶候选'],
+['Goodday集合商店','万宁神州半岛','9/22 推荐 · 服装 / 饰品'],
+['Peninsula手工饰品','万宁神州半岛','9/22 推荐 · 手工海洋风首饰'],
+['DEDECO','万宁神州半岛','9/22 晚饭 / 日落'],
+['万宁神州半岛假日度假酒店','万宁神州半岛','9/22 住宿'],
+['Treeco可可种植园','万宁兴隆华侨农场花园路5号','9/23 DIY 巧克力'],
+['三亚海棠湾保利悦雅酒店','三亚海棠湾','9/23 住宿'],
+['cdf三亚国际免税城','三亚海棠湾','9/24 免税店优先候选']
+];
+const maplist=document.getElementById('maplist');
+places.forEach((p,i)=>{const kw=encodeURIComponent(p[0]+' '+p[1]);maplist.insertAdjacentHTML('beforeend',`<div class="map-row"><div class="num">${i+1}</div><div class="map-info"><b>${p[0]}</b><span>${p[1]} · ${p[2]}</span></div><a class="btn" href="https://uri.amap.com/search?keyword=${kw}&callnative=1">导航</a></div>`)})
+
+const checklist=['身份证 / 驾驶证','机票与酒店订单','租车订单 / 取还车资料','充电器 / 充电宝','防晒用品 / 帽子','轻便雨具','泳衣 / 拖鞋','常用药品','墨镜','少量现金 / 备用支付方式'];
+const checks=document.getElementById('checks');
+checklist.forEach((x,i)=>{const k='check_'+i;checks.insertAdjacentHTML('beforeend',`<div class="check"><input type="checkbox" id="${k}"><label for="${k}">${x}</label></div>`);const el=document.getElementById(k);el.checked=localStorage.getItem(k)==='1';el.addEventListener('change',()=>localStorage.setItem(k,el.checked?'1':'0'))});
+
+document.querySelectorAll('.save').forEach(el=>{const k='trip_'+el.dataset.key;const saved=localStorage.getItem(k);if(saved!==null){el.value=saved;}el.addEventListener('input',()=>localStorage.setItem(k,el.value))});
+
+const weatherPlan = [
+  {date:'2026-09-19',label:'9/19 周六',city:'三亚',key:'sanya'},
+  {date:'2026-09-20',label:'9/20 周日',city:'陵水',key:'lingshui'},
+  {date:'2026-09-21',label:'9/21 周一',city:'陵水',key:'lingshui'},
+  {date:'2026-09-22',label:'9/22 周二',city:'万宁',key:'wanning'},
+  {date:'2026-09-23',label:'9/23 周三',city:'三亚',key:'sanya'},
+  {date:'2026-09-24',label:'9/24 周四',city:'三亚',key:'sanya'}
+];
+const weatherLocations = {
+  sanya:{name:'三亚',lat:18.2528,lon:109.5119},
+  lingshui:{name:'陵水',lat:18.4125,lon:109.9934},
+  wanning:{name:'万宁',lat:18.7950,lon:110.3970}
+};
+const weatherCodeMap = {
+  0:['☀️','晴'],1:['🌤️','大致晴'],2:['⛅','多云'],3:['☁️','阴'],
+  45:['🌫️','雾'],48:['🌫️','雾凇'],51:['🌦️','毛毛雨'],53:['🌦️','小雨'],55:['🌧️','中雨'],
+  56:['🌧️','冻毛雨'],57:['🌧️','冻毛雨'],61:['🌦️','小雨'],63:['🌧️','中雨'],65:['🌧️','大雨'],
+  66:['🌧️','冻雨'],67:['🌧️','冻雨'],71:['🌨️','小雪'],73:['🌨️','中雪'],75:['❄️','大雪'],
+  77:['🌨️','雪粒'],80:['🌦️','阵雨'],81:['🌧️','阵雨'],82:['⛈️','强阵雨'],85:['🌨️','阵雪'],
+  86:['🌨️','大阵雪'],95:['⛈️','雷暴'],96:['⛈️','雷暴夹冰雹'],99:['⛈️','强雷暴']
+};
+function getWeatherLabel(code){return weatherCodeMap[code] || ['🌥️','天气'];}
+function fmtTime(iso){if(!iso) return '--'; const d=new Date(iso); return `${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;}
+function getDecision(date, day){
+  const code = Number(day.weather_code);
+  const pop = Number(day.precipitation_probability_max ?? 0);
+  const wind = Number(day.wind_speed_10m_max ?? 0);
+  if(date==='2026-09-21'){
+    if(code <= 2 && pop <= 35 && wind <= 28) return {text:'适合分界洲岛，优先冲果冻海。', badge:'分界洲岛优先'};
+    if(pop <= 65 && wind <= 40 && code < 95) return {text:'天气一般，建议改走黎安镇 + 黎安港的轻松路线。', badge:'黎安更稳'};
+    return {text:'持续雨大或风力偏大，建议把这天还给酒店，保留弹性。', badge:'酒店休息'};
+  }
+  if(date==='2026-09-22'){
+    if(code <= 2 && pop <= 35) return {text:'比较适合石梅湾下午茶和 DEDECO 看日落。', badge:'日落条件不错'};
+    if(pop <= 60) return {text:'日落有不确定性，但整体仍可正常走石梅湾 + 神州半岛路线。', badge:'可正常出行'};
+    return {text:'注意阵雨和风大，下午茶与日落需留更多机动时间。', badge:'注意天气波动'};
+  }
+  if(date==='2026-09-24'){
+    return {text:'返程日前半天以免税购物和赶机场节奏为主，注意预留还车时间。', badge:'返程日'};
+  }
+  return {text:'按当天酒店和主要活动灵活安排，轻松慢游即可。', badge:'轻松出行'};
+}
+function buildWxCard(cfg, day){
+  const [icon,desc] = getWeatherLabel(day.weather_code);
+  const decision = getDecision(cfg.date, day);
+  return `<div class="wx-card">
+    <div class="wx-top"><div><div class="wx-day">${cfg.label}</div><div class="wx-city">${cfg.city}</div></div><span class="wx-badge">${decision.badge}</span></div>
+    <div class="wx-main"><div class="wx-icon">${icon}</div><div><div class="wx-temp mono">${Math.round(day.temperature_2m_min)}°–${Math.round(day.temperature_2m_max)}°</div><div class="wx-desc">${desc}</div></div></div>
+    <div class="wx-meta"><span class="wx-badge">降雨 ${Math.round(day.precipitation_probability_max ?? 0)}%</span><span class="wx-badge">最大风速 ${Math.round(day.wind_speed_10m_max ?? 0)} km/h</span>${day.sunset?`<span class="wx-badge">日落 ${fmtTime(day.sunset)}</span>`:''}</div>
+    <div class="wx-suggest">${decision.text}</div>
+  </div>`;
+}
+function updateInlineWeather(cacheMap){
+  document.querySelectorAll('[data-inline-weather]').forEach(box=>{
+    const date = box.dataset.inlineWeather;
+    const day = cacheMap[date];
+    if(!day) { box.querySelector('.wx-status').textContent = '暂无天气数据'; return; }
+    const [icon,desc] = getWeatherLabel(day.weather_code);
+    const decision = getDecision(date, day);
+    box.innerHTML = `<b>当日天气</b><div class="wx-status">${icon} ${desc}｜${Math.round(day.temperature_2m_min)}°–${Math.round(day.temperature_2m_max)}°｜降雨 ${Math.round(day.precipitation_probability_max ?? 0)}%｜风速 ${Math.round(day.wind_speed_10m_max ?? 0)} km/h</div><div class="small" style="margin-top:6px">${decision.text}</div>`;
+  });
+}
+function renderWeather(cacheMap, updatedAt){
+  const weatherGrid = document.getElementById('weatherGrid');
+  weatherGrid.innerHTML='';
+  weatherPlan.forEach(cfg=>{
+    const day = cacheMap[cfg.date];
+    if(day) weatherGrid.insertAdjacentHTML('beforeend', buildWxCard(cfg, day));
+    else weatherGrid.insertAdjacentHTML('beforeend', `<div class="wx-card"><div class="wx-day">${cfg.label}</div><div class="wx-city">${cfg.city}</div><div class="small" style="margin-top:10px">暂无天气数据，请稍后刷新。</div></div>`);
+  });
+  document.getElementById('weatherUpdate').textContent = updatedAt ? `天气更新：${updatedAt}` : '尚未获取天气';
+  updateInlineWeather(cacheMap);
+}
+async function fetchWeather(force=false){
+  const cacheKey='hainan_trip_weather_v2';
+  const now = new Date();
+  const cachedRaw = localStorage.getItem(cacheKey);
+  let cached = null;
+  if(cachedRaw){try{cached=JSON.parse(cachedRaw)}catch(e){}}
+  if(cached && !force){ renderWeather(cached.data, cached.updatedAt); }
+
+  const uniqueKeys=[...new Set(weatherPlan.map(x=>x.key))];
+  const allDays={};
+  try{
+    for(const key of uniqueKeys){
+      const loc=weatherLocations[key];
+      const url=`https://api.open-meteo.com/v1/forecast?latitude=${loc.lat}&longitude=${loc.lon}&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,wind_speed_10m_max,sunrise,sunset&timezone=Asia%2FShanghai&start_date=2026-09-19&end_date=2026-09-24`;
+      const res = await fetch(url);
+      if(!res.ok) throw new Error('weather fetch failed');
+      const data = await res.json();
+      const d = data.daily;
+      d.time.forEach((date, idx)=>{
+        weatherPlan.filter(x=>x.key===key && x.date===date).forEach(item=>{
+          allDays[date]={
+            weather_code:d.weather_code[idx],
+            temperature_2m_max:d.temperature_2m_max[idx],
+            temperature_2m_min:d.temperature_2m_min[idx],
+            precipitation_probability_max:d.precipitation_probability_max[idx],
+            wind_speed_10m_max:d.wind_speed_10m_max[idx],
+            sunrise:d.sunrise[idx],
+            sunset:d.sunset[idx]
+          };
+        });
+      });
+    }
+    const updatedAt = `${now.getMonth()+1}/${now.getDate()} ${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`;
+    localStorage.setItem(cacheKey, JSON.stringify({updatedAt, data:allDays}));
+    renderWeather(allDays, updatedAt);
+    toast('天气已刷新');
+  } catch(err){
+    if(cached){ renderWeather(cached.data, cached.updatedAt + '（缓存）'); toast('天气接口异常，已显示缓存'); }
+    else { renderWeather({}, null); toast('天气暂不可用'); }
+  }
+}
+
+document.getElementById('refreshWeather').addEventListener('click',()=>fetchWeather(true));
+fetchWeather(false);
+</script>
+</body>
+</html>
